@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Outfit&family=Pacifico&family=Poppins:wght@300&display=swap');
+@import "mobile1-responsive.css";
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    max-width:100%;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+/* session header with a background image*/
+.bg-img{
+    background-image: url('Health-Foods.jpg');
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.overlay{
+    height:inherit;
+    width: inherit;
+    background-color: rgba(0,0,0,0.6);
+}
+nav{
+    display:flex;
+    text-align: center;
+    padding:0px 15%;
+    top:0rem;
+    z-index: 999;
+
+}
+
+.logo{
+    height:150px;
+    width:200px;
+    width:200px;
+}
+nav .logo{
+    position:absolute;
+    left: 40%;
+}
+.nav-links{
+    width:100%;
+    
+}
+.nav-links .float{
+    float:left;
+}
+.nav-links .float-right{
+    float:right;
+}
+.nav-links li{
+    list-style: none;
+    display:inline;
+    padding: 10px 20px;
+    line-height:8rem;
+    
+}
+
+.links a{
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color:#fff;
+}
+.nav-links li a:hover{
+    color:#d64e1d;
+}
+
+ i.fa-bars{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-toggle{
+    display:none;
+    padding:20px;
+}
+.hero-content{
+    padding: 12% 0px;
+    line-height:5rem;
+    word-break:keep-all;
+}
+.organic-market{
+    font-size: 70px;
+    color:#0a9fb2;
+    
+}
+.address{
+    color:white;
+    font-size: 20px;
+}
+.btn-seeFoodMenu{
+    font-size: 22px;
+    background-color: #d64e1d;
+    padding:20px;
+    border:2px solid #d64e1d;
+    color:white;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.btn-seeFoodMenu:hover{
+    background-color: #0a9fb2;
+    border:2px solid #0a9fb2;
+}
+/*container food-menu*/
+.food-menu{
+    margin:3% 10%;
+    
+}
+.btn-container{
+    margin-bottom: 50px;
+}
+.filter-btn{
+    padding:10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin:0px 10px;
+    border:none;
+    background-color: #d64e1d;
+    color:#fff
+}
+.filter-btn:hover{
+    background-color:#8bb178;
+    
+}
+.pinterest-hover{
+    display:flex;
+    position:relative;
+    height:auto;
+    justify-content: center;
+}
+.pinterest{
+    position: absolute;
+    color:#E60023;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:30%;
+    height: 0px;
+    overflow: hidden;
+}
+.pinterests{
+    position: absolute;
+    color:#E60023;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0;
+    height: 0px;
+    overflow: hidden;
+}
+.pinterest-hover:hover .pinterest{
+    height:100%;
+}
+.pinterest-hover:hover .pinterests{
+    height:100%;
+}
+.btn-container{
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.menu-card{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    
+}
+.menu{
+    box-shadow: 0px 10px 10px #ccc;
+    display: flex;
+}
+
+.food-img{
+    padding-right: 20px;
+}
+.food-image{
+    border: 5px solid #8bb178;
+    border-radius: 5px;
+    width:150px;
+    height:150px;
+}
+.menu-title{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    word-break:break-all;
+}
+.menu-info{
+    width:100%;
+}
+.food-text{
+    padding-top: 10px;
+    text-align: start;
+    line-height: 1.5rem;
+    font-size: 14px;
+}
+.instagram-content{
+    padding:3% 10%;
+    height:550px;
+    overflow: hidden;
+    position:relative;
+}
+
+.instagram-text{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.instagram-slider{
+    display:flex;
+    overflow: hidden;
+    padding-top: 50px;
+    
+    height:400px;
+    position:absolute;
+}
+.instagram-card{
+    width:100%;
+    padding:0px 5px;
+    position: relative;
+}
+
+.instagram-img{
+    width:350px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.instagram-btn .btn-prev,
+.instagram-btn .btn-next{
+    border:none;
+    color:black;
+    position:absolute;
+    cursor: pointer;
+    top:60%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.instagram-btn .btn-prev{
+    left:100px;
+    
+}
+.instagram-btn .btn-next{
+    right:100px;
+}
+/*about container*/
+.about-bg{
+    background-image: url('palm-background-02.jpg');
+    background-size: cover;
+    width:100%;
+    padding:5% 10%;
+}
+.about-content{
+    padding:30px 0px;
+    line-height: 1.7rem;
+    font-size: 14px;
+}
+.about-title{
+    text-align: center;
+    color:#8bb178;
+    font-size: 30px;
+   
+}
+.about-img{
+    float:right;
+    width:300px;
+    height: 200px;
+}
+.about-baked-food{
+    padding:20px 0px;
+}
+.more-text{
+    display:none;
+}
+.about-text.show-more .more-text{
+    display:inline;
+    padding-top: 30px;
+}
+.about-closing{
+    text-align: center;
+}
+
+.about-history{
+    text-align: center;
+    color:#8bb178;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.history{
+    padding:10px 0px;
+    line-height: 1.7rem;
+    font-size: 14px;
+}
+.fresh-order{
+    background-image: url('Pacific-Health-Foods-Catering.jpg');
+    width:100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.fresh-order-content{
+    padding: 5% 10% 10%;
+
+}
+.brands{
+    padding:5% 12%;
+}
+.brands-title{
+    text-align: center;
+    color:#8bb178;
+    font-size: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.about-brand{
+    line-height: 1.6rem;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+.brands-logo{
+    padding-bottom:20px;
+    width:100%;
+    height: 100%;
+}
+.sms{
+    background-color: #6fb5b5;
+    padding:7% 10% 5%;
+
+}
+.fontawesome{
+    text-align: center;
+    font-size: 30px;
+    padding:20px;
+}
+.fontawesome a i.fa{
+    padding:0px 10px;
+    border-radius: 50%;
+    color:white;
+}
+.sign-up{
+    color:#fff;
+    font-size: 25px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.form-class{
+    background-color: rgba(0,0,0,.05);
+    text-align: center;
+    padding:3% 8%;
+}
+.input-text{
+    padding:15px;
+    margin: 10px 0px;
+}
+.btn-form{
+    background-color: black;
+    transition: .1s opacity linear;
+    color:white;
+    font-size: 16px;
+    padding:10px 20px;
+    border-radius: 20px;
+    margin:20px 0px;
+}
+.sms-text{
+    font-size: 10px;
+}
+.footer{
+    background-color: #fff;
+    padding:30px;
+    text-align: center;
+    font-size: 16px;
+    width:100%;
+}
+.footer-text{
+    margin: auto;
+    
+}
+@media screen and (max-width:1300px){
+    nav{
+        padding:0px 10%;
+    }
+}
+@media screen and (max-width:1100px){
+    nav{
+        padding:0px 5%;
+    }
+}
+@media screen and (max-width:980px){
+    nav{
+        padding:0px 10px;
+    }
+}
+@media screen and (max-width:920px){
+    nav{
+        padding:0px;
+    }
+}
+@media screen and (max-width:890px){
+    .logo{
+        height: 100px;
+        width: 150px;
+    }
+    .nav-links{
+        position: absolute;
+        left:0;
+        right:0;
+        top:7rem;
+        height: 0;
+        background-color: #0a9fb2;
+        display:flex;
+        flex-direction: column;
+        text-align: left;
+        transition: 0.5s ease;
+        overflow: hidden;
+        
+     }
+     .show-links{
+        height: 35vh;
+     }
+     .nav-links li{
+        padding:0px 5px;
+        line-height: 3rem;
+     }
+     .nav-toggle{
+        display:block;
+     }
+     .hero-content{
+        padding: 30% 0px;
+    }
+    /**/
+    .filter-btn{
+        margin:10px;
+    }
+    .food-menu{
+        margin:5%;
+    }
+    .menu-card{
+        grid-gap:1rem;
+    }
+    .instagram-content{
+        padding:10%;
+    }
+    .instagram-slider{
+        width:80%;
+    }
+    .instagram-img{
+        width:250px;
+        height: 300px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:860px){
+    
+    
+    .hero-content{
+        padding:15% 10%;
+        line-height: 3rem;
+    }
+    .organic-market{
+        font-size: 40px;
+        
+    }
+    .address{       
+        font-size: 16px;
+    }
+    .btn-seeFoodMenu{
+        font-size: 16px;
+        padding: 8px 10px;
+        border-radius: 5px;
+    }
+    
+    .food-menu{
+        margin:3%;
+    }
+    .menu-image{
+        width:50%;
+        height: 50%;  
+    }
+    .our-menu-img{
+        text-align: center;
+    }
+    .menu-card{
+        display: block; 
+   
+    }
+    .menu{
+        padding: 20px 0px;
+        margin: 0px 10px;
+       
+    }
+    .menu-title{
+        padding:0px 10px 10px;
+        
+    }
+    .instagram-content{
+        padding:10% 0px;
+        height:400px;
+        margin: 20px;
+    }
+    .instagram-text{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .instagram-slider{
+        width: 300%;
+        padding:0px;
+
+    }
+
+    .instagram-img{
+        width: 100%;
+        height: 100%;
+    }
+    .instagram-btn .btn-prev{
+        left:25px;
+        
+    }
+    .instagram-btn .btn-next{
+        right:25px;
+    }
+    /* about container*/
+    .about-bg{
+        padding:5%;
+    }
+    .fresh-order-content{
+        padding: 5%;
+    
+    }
+    .brands{
+        padding:5%;
+    }
+    .input-text{
+        width:100%;
+    }
+
+    
+}
+@media screen and (max-width:400px){
+
+    .logo{
+        height:100px;
+        width:100px;
+    }
+    .hero-content{
+        padding:30% 10%;
+        line-height: 2rem;
+    }
+    .organic-market{
+        font-size: 30px;
+    }
+    .address{
+        font-size: 16px;
+    }
+    .btn-seeFoodMenu{
+        font-size: 16px;
+        padding:10px;
+        border:2px solid #d64e1d;
+        border-radius: 5px;
+    }
+    .menu-card{
+        display:block;
+    }
+    .menu-title{
+        display:block
+    }
+    .our-menu-img{
+        text-align: center;
+    }
+    /*about*/
+    .about-bg{
+        padding:5%;
+    }
+    .about-img{
+        text-align: center;
+        float:none;
+    }
+}
+@media screen and (max-width:280px){
+    .menu{
+        display:block;
+    }
+    .about-img{
+        height:100px;
+        width:200px;
+    }
+}

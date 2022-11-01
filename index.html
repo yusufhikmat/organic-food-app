@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Organic food App</title>
+</head>
+
+<body>
+    <session>
+        <div class="container bg-img">
+            <div class="overlay">
+                <nav>
+                    <div>
+                        <img src="images/PHF-Logo-Web.png" class="logo" alt="logo">
+                        <span class="nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </div>
+                    <ul class="nav-links" id="nav-bar">
+                        <li class="links float"><a class="active" href="index.html">home</a></li>
+                        <li class="links float"><a href="#about">About us</a></li>
+                        <li class="links float"><a href="#food">food menu</a></li>
+                        <li class="links float-right"><a href="#bakery">bakery</a></li>
+                        <li class="links float-right"><a href="#brand">shop</a></li>
+                        <li class="links float-right"><a href="contact.html">Contact</a></li>
+                        <li class="links float-right"><a href="blog.html">blog</a></li>
+                    </ul>
+                </nav>
+                <div class="hero-content">
+                    <h1 class="organic-market">Your local, organic market. </h1>
+                    <h3 class="address">VISIT US AT 944 LINDEN AVENUE, CARPINTERIA (805) 684-2115</h3>
+                    <button class="btn-seeFoodMenu">see our food menu</button>
+                </div>
+            </div>
+        </div>
+    </session>
+    <div class="container" id="foodMenu">
+        <div class="food-menu">
+            <div class="pinterest-hover">
+                <div class="pinterest">
+                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                </div>
+                <div class="our-menu-img">
+                    <img src="images/image-asset.png" class="menu-image">
+                </div>
+            </div>
+            <div>
+                <div class="btn-container">
+                    <!--<button class="filter-btn" type="button" data-id="all">all</button>
+
+                <button class="filter-btn" type="button" data-id="breakfast">breakfast</button>
+                <button class="filter-btn" type="button" data-id="Smoothies">Smoothies</button>
+                <button class="filter-btn" type="button" data-id="Fresh-salad">Fresh-salad</button>
+                <button class="filter-btn" type="button" data-id="Baked-Goods">Baked-Goods</button>
+                <button class="filter-btn" type="button" data-id="Acial-Bowls">Acial-Bowls</button>
+                <button class="filter-btn" type="button" data-id="Sandwich">Sandwich</button>
+
+                filter buttons-->
+                </div>
+
+            </div>
+            <div class="menu-card">
+                <div class="menu col-6">
+                    <div class="food-img">
+                        <img src="images/image-asset (1).jpeg" alt="food-image" class="food-image">
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title">
+                            <h4>Yam and Egg</h4>
+                            <h4>$15</h4>
+                        </div>
+                        <div>
+                            <p class="food-text">
+                                Our juice bar is ready to serve you with a menu of old and new favorites,
+                                featuring only Non-GMO and 100% organic ingredients.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="instagram-content">
+            <div class="instagram-text">
+                <h3>Catch Our Soup of The Day on Instagram, only $3.99/Cup and $10.99/ Bowl!</h3>
+            </div>
+            <div class="instagram-slider" id="instagramSlider">
+                <div class="instagram-card">
+                    <div class="instagram-img-card">
+                        <img src="images/green.jpg" alt="" class="instagram-img">
+                    </div>
+                </div>
+                <div class="instagram-card">
+                    <div class="instagram-img-card">
+                        <img src="images/lux.jpg" alt="" class="instagram-img">
+                    </div>
+                </div>
+                <div class="instagram-card">
+                    <div class="instagram-img-card">
+                        <img src="images/tuna.jpg" alt="" class="instagram-img">
+                    </div>
+                </div>
+            </div>
+            <div class="instagram-btn">
+                <button class="btn-prev" onclick="before()"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <button class="btn-next" onclick="after()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="container about-bg" id="about">
+        <div class="bg-overlay">
+
+            <div>
+                <h2 class="about-title">What We Believe In</h2>
+            </div>
+            <div class="about-content">
+                <div>
+                    <img src="images/grocery-store-carp.jpg" alt="" class="about-img">
+                    <p>
+                        For 25 years, Pacific Health Foods has served Santa Barbara County as a family-operated grocer,
+                        providing affordable and healthy alternatives to the community. Pacific Health Foods maintains
+                        the highest standards
+                        in our vendors,featuring trusted brands known for their quality and bioactivity.
+                    </p>
+                    <p>
+                        Our juice bar is ready to serve you with a menu of old and new favorites, featuring only Non-GMO
+                        and 100% organic ingredients.
+                        Come, stay, and enjoy lunch with us along historic Linden Avenue.
+                    </p>
+                    <p>
+                        We are ready to meet the needs of all our customers, equipped with the knowledge to make plenty
+                        of helpful suggestions.
+                        We carry vegan and paleo products, in addition to all-organic grocery solutions, and homeopathic
+                        remedies.
+                        Pacific Health Foods is your one-stop shop to a healthy, better life.
+                    </p>
+                </div>
+
+            </div>
+
+            <h2 class="about-history">Our History</h2>
+            <p class="history">Pacific Health Foods has been run by multiple generations of the Noll family. In 1991 the
+                first location
+                was opened by Chuck and Millie Noll off of Wullbrant Way in the heart of downtown Carpinteria.</p>
+            <p class="history">Avid supporters of health and nutrition since they were in their thirties, Chuck and
+                Millie ran the store with the help of
+                their son David Noll, wife Linda and their many grandchildren. After retiring a second time, in 1995
+                their son David took
+                over and moved the store from Wullbrant to its present location 944 Linden Ave.</p>
+            <p class="history">In 2008, the smoothie bar was added. Over the years several organic options were added to
+                the menu, such as,
+            <p class="history">In 2008, the smoothie bar was added. Over the years several organic options were added to
+                the menu, such as,
+                farm fresh juices, sandwiches, wraps, soups, acai bowls and kombucha.</p>
+            <p class="history">In 2015, newlyweds Nathan and Whitney Noll took over the store with the intent to follow
+                in their familys
+                footsteps and continue to run Pacific Health Foods as a business whose sole purpose is to help the
+                people of the community enjoy a healthier and more fulfilling life. </p>
+            <h4 class="about-closing">"WE ARE THE WHOLESOME ALTERNATIVE TO BIG ORGANIC."</h4>
+
+        </div>
+    </div>
+    <div class="container fresh-order" id="bakery">
+        <div class="bg-overlay">
+            <div class="fresh-order-content">
+                <h2 class="about-title">Made Fresh To Order</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>There are few foods more comforting and satisfying than warm fresh-baked breads. We believe
+                            this so whole-heartedly
+                            that we have created Carpinterias first and only all organic bakery. Our multi-dietary
+                            selection of artisanal breads
+                            and baked goods are available daily and through customizable large orders.
+                            Let us make your next brunch, beach day or office party bountiful and delicious.</p>
+
+                        <span class="more-text">
+                            <h3 class="about-baked-food">Customizable Bakery & Food Orders</h3>
+
+                            <p>
+                                Organic baked breads, scones, muffins, acai bowls, smoothies, pressed juices, soups,
+                                sandwiches and salads make a healthy feast of any meal. Through our customizable order
+                                form,
+                                you can select from all of our made-to-order bakery, beverage and food menus. There are
+                                no minimum
+                                order sizes for fresh baked loaves of bread. However, our handmade scones, rolls and
+                                pastries must be ordered by the dozen.
+                                In addition to your selections and quantities, please clearly specify all dietary
+                                restrictions in the order form provided. 24-hour advanced notice is required for all
+                                custom orders.
+
+
+                            </p>
+
+                            <h4>TO PLACE YOUR ORDER PLEASE CALL 805.684.2115 OR
+                                EMAIL<span>NATHAN@PACIFICHEALTHFOOD.COM</span></h4>
+
+                        </span>
+                    </div>
+
+                    <div>
+                        <button class="btn-seeFoodMenu read-more">find out more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="brand">
+        <div class="brands">
+            <div class="brands-title">
+                <h3>We are proud to carry your favorite brands</h3>
+            </div>
+            <div>
+                <p class="about-brand">Pacific Health Foods is a community-crafted market designed to help you thrive.
+                    Buying your groceries from Pacific Health Foods is a rewarding practice that caters directly to you
+                    and your family,
+                    while benefitting the local economy and our precious natural world.</p>
+                <p class="about-brand">We carry a wide selection of wellness brands, whole foods and vitamins for all
+                    diet specificities.
+                    We also stock eco-friendly and cruelty-free household items that leave your home sparkling &
+                    chemical-free.</p>
+                <p class="about-brand">Discover unique specialty brands and items that only Pacific Health Foods carries
+                    - including vegan products,
+                    gluten-free items, dairy-free delights, ethically raised hormone-free grass fed beef, locally
+                    sourced produce and fresh organic breads from our in-house bakery.
+                </p>
+                <p class="about-brand">
+                    If you do not see the brands or specific wellness products you prefer on our shelves, we will source
+                    them for you, at no additional charge.
+                </p>
+            </div>
+            <div>
+                <div class="pinterest-hover">
+                    <div class="pinterests">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <img src="images/image-asset (5).jpeg" alt="brands-logo" class="brands-logo">
+                    </div>
+                </div>
+                <div class="pinterest-hover">
+                    <div class="pinterests">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <img src="images/image-asset (7).jpeg" alt="brands-logo" class="brands-logo">
+                    </div>
+                </div>
+
+                <div class="pinterest-hover">
+                    <div class="pinterests">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </div>
+
+                    <div><img src="images/image-asset (8).jpeg" alt="brands-logo" class="brands-logo">
+                    </div>
+                </div>
+                <div class="pinterest-hover">
+                    <div class="pinterests">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </div>
+                    <div><img src="images/image-asset (9).jpeg" alt="brands-logo" class="brands-logo">
+                    </div>
+                </div>
+                <div class="pinterest-hover">
+                    <div class="pinterests">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </div>
+                    <div><img src="images/image-asset (10).jpeg" alt="brands-logo" class="brands-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="sms">
+                <div class="fontawesome">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <div class="form-class">
+                    <h3 class="sign-up">Sign up to receive recipes, deals and coupons straight to your inbox</h3>
+                    <form>
+                        <div class="input-form">
+                            <input type="text" name="name" placeholder="name" class="input-text">
+                            <input type="text" name="phone" placeholder="phone" class="input-text">
+                            <input type="text" name="email" placeholder="email" class="input-text">
+                        </div>
+                        <div>
+                            <button class="btn-form">yes, i want deal</button>
+                        </div>
+                    </form>
+                    <div>
+                        <p class="sms-text">
+                            We respect your privacy and never share your email with any third parties.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer-text">I am not the copywrite owner of this site, I only cloned it for practice purpose</p>
+        </div>
+        <script src="index.js"></script>
+        <script src="index2.js"></script>
+</body>
+
+</html>
