@@ -26,9 +26,12 @@ body{
 }
 nav{
     display:flex;
+    position: fixed;
     text-align: center;
     padding:0px 15%;
-    top:0rem;
+    top:0;
+    right:0;
+    left:0;
     z-index: 999;
 
 }
@@ -36,11 +39,8 @@ nav{
 .logo{
     height:150px;
     width:200px;
-    width:200px;
-}
-nav .logo{
     position:absolute;
-    left: 40%;
+    left: 42%;
 }
 .nav-links{
     width:100%;
@@ -56,8 +56,7 @@ nav .logo{
     list-style: none;
     display:inline;
     padding: 10px 20px;
-    line-height:8rem;
-    
+    line-height: 8rem;   
 }
 
 .links a{
@@ -80,12 +79,12 @@ nav .logo{
     padding:20px;
 }
 .hero-content{
-    padding: 12% 0px;
+    padding: 25% 0px 10%;
     line-height:5rem;
     word-break:keep-all;
 }
 .organic-market{
-    font-size: 70px;
+    font-size: 60px;
     color:#0a9fb2;
     
 }
@@ -106,6 +105,10 @@ nav .logo{
     background-color: #0a9fb2;
     border:2px solid #0a9fb2;
 }
+.change-navbarBg{
+    background-color: rgba(0,0,0,0.5);
+    color:#0a9fb2;
+}
 /*container food-menu*/
 .food-menu{
     margin:3% 10%;
@@ -118,7 +121,7 @@ nav .logo{
     padding:10px 15px;
     font-size: 16px;
     border-radius: 5px;
-    margin:0px 10px;
+    margin:5px 10px;
     border:none;
     background-color: #d64e1d;
     color:#fff
@@ -201,6 +204,7 @@ nav .logo{
     line-height: 1.5rem;
     font-size: 14px;
 }
+/**/
 .instagram-content{
     padding:3% 10%;
     height:550px;
@@ -216,14 +220,13 @@ nav .logo{
 .instagram-slider{
     display:flex;
     overflow: hidden;
-    padding-top: 50px;
-    
+    padding-top: 50px;   
     height:400px;
     position:absolute;
+    width:100%;
 }
 .instagram-card{
-    width:100%;
-    padding:0px 5px;
+    padding:0px 7px;
     position: relative;
 }
 
@@ -330,6 +333,87 @@ nav .logo{
     width:100%;
     height: 100%;
 }
+/* contact form*/
+.contact {
+    padding: 3% 10%;
+    text-align: center;
+}
+
+.contact-div {
+    margin: 20px;
+}
+
+.contact-title {
+    text-align: center;
+    color: #8bb178;
+    font-size: 30px;
+    padding-bottom: 15px;
+    padding-bottom: 20px;
+
+}
+
+.contact-form {
+    text-align: justify;
+}
+
+.input-div {
+    margin: 20px 0px;
+}
+
+.input-box {
+    padding: 10px 0px;
+    width: 100%;
+    border: none;
+    background-color: #eee;
+}
+
+.btn-submit {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/*palm backgroung*/
+.palm-bg {
+    background-image: url('palm-background-01.jpg');
+    width: 100%;
+    background-size: cover;
+    line-height: 1.8rem;
+
+}
+
+.bg-overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: inherit;
+    width: inherit;
+}
+
+.palm-bg-content {
+    padding: 5% 10%;
+}
+
+.palm-bg-text {
+    font-size: 25px;
+    line-height: 2.5rem;
+}
+
+.palm-bg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 2rem;
+    padding-top: 7%;
+
+}
+
+.palm-grid-heading {
+    padding-bottom: 15px;
+}
+
+.palm-bg-grid p {
+    font-size: 14px;
+}
 .sms{
     background-color: #6fb5b5;
     padding:7% 10% 5%;
@@ -383,213 +467,325 @@ nav .logo{
     margin: auto;
     
 }
-@media screen and (max-width:1300px){
-    nav{
-        padding:0px 10%;
+@media screen and (max-width:1200px) {
+    nav {
+        padding: 0px 12%;
     }
-}
-@media screen and (max-width:1100px){
-    nav{
-        padding:0px 5%;
+    nav .logo {
+        left: 44%;
     }
-}
-@media screen and (max-width:980px){
-    nav{
-        padding:0px 10px;
-    }
-}
-@media screen and (max-width:920px){
-    nav{
-        padding:0px;
-    }
-}
-@media screen and (max-width:890px){
-    .logo{
+    .logo {
         height: 100px;
         width: 150px;
     }
-    .nav-links{
-        position: absolute;
-        left:0;
-        right:0;
-        top:7rem;
-        height: 0;
-        background-color: #0a9fb2;
-        display:flex;
-        flex-direction: column;
-        text-align: left;
-        transition: 0.5s ease;
-        overflow: hidden;
-        
-     }
-     .show-links{
-        height: 35vh;
-     }
-     .nav-links li{
-        padding:0px 5px;
-        line-height: 3rem;
-     }
-     .nav-toggle{
-        display:block;
-     }
-     .hero-content{
-        padding: 30% 0px;
+    .nav-links li {
+        padding: 10px 15px;
+        line-height: 5rem;
     }
     /**/
-    .filter-btn{
-        margin:10px;
+    .food-menu {
+        margin: 5%;
     }
-    .food-menu{
-        margin:5%;
+    
+    .menu-card {
+        grid-gap: 2rem;
     }
-    .menu-card{
-        grid-gap:1rem;
-    }
-    .instagram-content{
-        padding:10%;
-    }
-    .instagram-slider{
-        width:80%;
-    }
-    .instagram-img{
-        width:250px;
-        height: 300px;
-        border-radius: 10px;
-    }
+        /*instagram*/
+        .instagram-content {
+            padding: 5%;
+        }
+    
+        .instagram-text {
+            font-size: 20px;
+        }
+    
+        .instagram-img {
+            width: 250px;
+        }
+}
+@media screen and (max-width:890px){
+    nav {
+        padding: 0px 5%;
+     }
+
 }
 
-@media screen and (max-width:860px){
-    
-    
-    .hero-content{
-        padding:15% 10%;
+@media screen and (max-width:860px) {
+
+
+    .hero-content {
+        padding: 15% 10%;
         line-height: 3rem;
     }
-    .organic-market{
+
+    .organic-market {
         font-size: 40px;
-        
+
     }
-    .address{       
+
+    .address {
         font-size: 16px;
     }
-    .btn-seeFoodMenu{
+
+    .btn-seeFoodMenu {
         font-size: 16px;
         padding: 8px 10px;
         border-radius: 5px;
     }
-    
-    .food-menu{
-        margin:3%;
+
+    .food-menu {
+        margin: 3%;
     }
-    .menu-image{
-        width:50%;
-        height: 50%;  
+
+    .menu-image {
+        width: 50%;
+        height: 50%;
     }
-    .our-menu-img{
+
+    .our-menu-img {
         text-align: center;
     }
-    .menu-card{
-        display: block; 
-   
+
+    .menu-card {
+        grid-gap: 1rem;
+
     }
-    .menu{
+
+    .menu {
         padding: 20px 0px;
         margin: 0px 10px;
-       
+
     }
-    .menu-title{
-        padding:0px 10px 10px;
-        
+
+    .menu-title {
+        padding: 0px 10px 10px;
+
     }
-    .instagram-content{
-        padding:10% 0px;
-        height:400px;
+
+    .instagram-content {
+        padding: 10% 0px;
+        height: 400px;
         margin: 20px;
     }
-    .instagram-text{
+
+    .instagram-text {
         font-size: 20px;
         padding-bottom: 20px;
     }
-    .instagram-slider{
+
+    .instagram-slider {
         width: 300%;
-        padding:0px;
+        padding: 0px;
 
     }
 
-    .instagram-img{
+    .instagram-img {
         width: 100%;
         height: 100%;
     }
-    .instagram-btn .btn-prev{
-        left:25px;
-        
+
+    .instagram-btn .btn-prev {
+        left: 25px;
+
     }
-    .instagram-btn .btn-next{
-        right:25px;
+
+    .instagram-btn .btn-next {
+        right: 25px;
     }
+
     /* about container*/
-    .about-bg{
-        padding:5%;
-    }
-    .fresh-order-content{
+    .about-bg {
         padding: 5%;
-    
-    }
-    .brands{
-        padding:5%;
-    }
-    .input-text{
-        width:100%;
     }
 
-    
+    .fresh-order-content {
+        padding: 5%;
+
+    }
+
+    .brands {
+        padding: 5%;
+    }
+
+    .input-text {
+        width: 100%;
+    }
+
+
 }
-@media screen and (max-width:400px){
-
-    .logo{
-        height:100px;
-        width:100px;
+@media screen and (max-width:750px) {
+    nav {
+        padding: 0px 2%;
     }
-    .hero-content{
-        padding:30% 10%;
+
+    .nav-links li {
+        padding: 10px;
+    }
+}
+@media screen and (max-width:690px) {
+    .logo {    
+            height: 50px;
+            width: 50px;
+        }
+    .nav-links {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 4rem;
+        height: 0;
+        background-color: #0a9fb2;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        transition: 0.5s ease;
+        overflow: hidden;
+
+    }
+
+    .show-links {
+        height: 35vh;
+    }
+
+    .nav-links li {
+        padding: 0px 5px;
+        line-height: 3rem;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .hero-content {
+        padding: 30% 0px;
+    }
+
+    /**/
+    .filter-btn {
+        margin: 10px;
+    }
+
+    .food-menu {
+        margin: 5%;
+    }
+
+    .menu-card {
+        display: block;
+    }
+
+    .instagram-content {
+        padding: 10%;
+    }
+
+    .instagram-slider {
+        width: 80%;
+    }
+
+    .instagram-img {
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width:680px){
+    .palm-bg-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media screen and (max-width:400px) {
+
+    .hero-content {
+        padding: 30% 10%;
         line-height: 2rem;
     }
-    .organic-market{
+
+    .organic-market {
         font-size: 30px;
     }
-    .address{
+
+    .address {
         font-size: 16px;
     }
-    .btn-seeFoodMenu{
+
+    .btn-seeFoodMenu {
         font-size: 16px;
-        padding:10px;
-        border:2px solid #d64e1d;
+        padding: 10px;
+        border: 2px solid #d64e1d;
         border-radius: 5px;
     }
-    .menu-card{
+
+    .menu-card {
+        display: block;
+    }
+
+    .menu-title {
+        display: block
+    }
+
+    .our-menu-img {
+        text-align: center;
+    }
+
+    /*about*/
+    .about-bg {
+        padding: 5%;
+    }
+
+    .about-img {
+        display:flex;
+        margin: auto;
+        float: none;
+        width:200px
+    }
+    /**/
+        .instagram-content {
+            padding: 10% 0px;
+            height: 400px;
+            margin: 20px;
+        }
+    
+        .instagram-text {
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+    
+        .instagram-slider {
+            width: 300%;
+            padding: 0px;
+    
+        }
+    
+        .instagram-img {
+            width: 100%;
+        }
+        .instagram-btn .btn-prev,
+        .instagram-btn .btn-next{
+            top: 80%;
+    
+        }
+    
+        .instagram-btn .btn-next {
+            right: 25px;
+        }
+    .palm-bg-text{
+        font-size: 16px;
+    }
+     .palm-bg-grid {
         display:block;
     }
-    .menu-title{
-        display:block
-    }
-    .our-menu-img{
-        text-align: center;
-    }
-    /*about*/
-    .about-bg{
-        padding:5%;
-    }
-    .about-img{
-        text-align: center;
-        float:none;
+    .palm-grid-iframe iframe{
+        width:150px;
+        height:150px;
     }
 }
-@media screen and (max-width:280px){
-    .menu{
-        display:block;
+
+@media screen and (max-width:280px) {
+    .menu {
+        display: block;
     }
-    .about-img{
-        height:100px;
-        width:200px;
+
+    .about-img {
+        height: 100px;
+        width: 100px;
     }
 }

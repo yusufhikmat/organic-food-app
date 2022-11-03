@@ -13,6 +13,25 @@ function showLinks(){
 }
 //end of navigation
 
+//navbar color change
+
+function changeNavbarBg(){
+    const scrollValue = window.scrollY;
+    const navbar = document.getElementById('navbar');
+    const logo = document.querySelector('.logo')
+    const links=document.querySelector('.nav-links')
+    if(scrollValue < 600){
+        navbar.classList.remove('change-navbarBg')
+        logo.style.display = 'block';
+    
+    }else{
+        navbar.classList.add('change-navbarBg')
+        logo.style.display = 'none';
+        links.style.lineHeight='1.5rem';
+    }
+}
+window.addEventListener('scroll', changeNavbarBg)
+
 //read more and readless of btnseefoodmenu
 const btnSeeFoodMenu = document.querySelector('.read-more');
 const aboutText= document.querySelector('.about-text');
